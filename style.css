@@ -1,59 +1,134 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
   background: #f6f1e9;
   color: #4b3b2a;
 }
 
-header {
+/* HEADER */
+.header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 60px;
+  align-items: center;
+  padding: 20px 80px;
   background: #f2eadf;
 }
 
-header a {
-  margin-left: 20px;
+.logo {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.nav a {
+  margin-left: 24px;
   text-decoration: none;
   color: #4b3b2a;
+  font-size: 14px;
 }
 
+/* HERO */
 .hero {
-  padding: 80px 60px;
-  background: #e8dccb;
+  display: flex;
+  align-items: center;
+  padding: 80px;
+  background: #efe6d8;
 }
 
-.hero h1 {
-  font-size: 36px;
+.hero-text {
+  flex: 1;
 }
 
-button {
-  padding: 12px 24px;
+.hero-text h1 {
+  font-size: 38px;
+  margin-bottom: 16px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.hero-text button {
+  padding: 12px 28px;
   background: #b08d57;
   color: white;
   border: none;
-  margin-top: 20px;
+  cursor: pointer;
 }
 
+.hero-image img {
+  width: 420px;
+  border-radius: 12px;
+}
+
+/* PRODUCTS */
 .products {
-  padding: 60px;
+  padding: 80px;
+  text-align: center;
+}
+
+.products h2 {
+  margin-bottom: 40px;
+  font-size: 24px;
 }
 
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 30px;
 }
 
 .product-card {
   background: white;
-  padding: 30px;
-  text-align: center;
-  border-radius: 10px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-footer {
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.product-card h3 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.product-card p {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.product-card button {
+  padding: 8px 16px;
+  background: #b08d57;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* SERVICES */
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  background: #e8dccb;
+  font-size: 14px;
+}
+
+/* FOOTER */
+.footer {
   text-align: center;
   padding: 20px;
   background: #d8c7af;
+  font-size: 14px;
 }
